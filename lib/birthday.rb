@@ -5,7 +5,7 @@
 # }
 
 def happy_birthday(birthday_kids)
-  birthday_kids.collect do |name, age|
-    "Happy #{age}th birthday, #{name}!"
+  birthday_kids.each do |name, age|
+    outs "Happy Birthday #{name}! You are now #{age} years old!"
   end
 end
